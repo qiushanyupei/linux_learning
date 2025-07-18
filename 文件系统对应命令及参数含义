@@ -1,1 +1,2 @@
 df(disk free，查看磁盘使用情况)-T（Type)-h(human-readable)
+会展示文件系统和挂载点，挂载点和实际目录情况直接挂钩
