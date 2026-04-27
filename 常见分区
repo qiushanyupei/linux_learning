@@ -5,3 +5,6 @@
 /sbin（系统管理命令（如 fdisk, mount），root 可用）
 /boot（引导加载器文件（启动相关）（内核 vmlinuz、initrd、grub 配置））其中，vmlinuz：是经过压缩的 Linux 内核映像文件；initrd：独立的、临时的根文件系统镜像。作用是：在真正的根文件系统被挂载前，提供必要的内核模块（如磁盘驱动、文件系统驱动）和工具，帮助内核找到并挂载实际的根文件系统。一旦任务完成，内核会将其卸载并切换到真正的根文件系统。；grub:独立的引导加载程序（Boot Loader）。作用是：在计算机启动时，负责从磁盘上找到并加载内核（vmlinuz）和 initrd到内存中，然后把控制权交给内核。
 /dev(设备文件（硬盘 /dev/sda、终端 /dev/tty、随机数 /dev/random）)
+/etc：系统配置文件
+/home：普通用户的家目录（/home/username/）
+/lib:共享库和内核模块（类似 Windows 的 DLL 文件）(Dynamic Link Library（动态链接库）)
