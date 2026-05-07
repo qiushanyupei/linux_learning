@@ -1,0 +1,9 @@
+tar：将多个文件打包成一个文件，但同时也可以压缩和解压缩
+-z:接受.gz(gzip)相关格式的文件；-j:bzip2格式的文件
+-xf:extract all files
+-v:verbose
+-c:create
+-f:指定文件名
+
+vim /xxx.sh 是在绝对路径下创建文件；vim直接加文件名是在当前目录下创建文件；rm 也是同理
+
