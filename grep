@@ -1,0 +1,2 @@
+-v表示去除（invert-match）
+-q表示quiet（即不输出查询结果）
