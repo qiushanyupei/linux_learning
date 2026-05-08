@@ -1,1 +1,2 @@
 uname：输出系统信息
+ps -ef(输出系统进程信息),e表示所有，-f表示full format
