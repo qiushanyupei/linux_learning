@@ -1,5 +1,5 @@
 临时修改IP：
-ifconfig可以临时修改：查看或设置网卡的TCP/IP参数,不加任何参数时：显示当前处于活动状态的接口
+ifconfig可以临时修改：查看或设置网卡的TCP/IP参数,不加任何参数时：显示当前处于活动状态的接口（ifconfig做写操作常需要root权限）
 inet addr ：IPv4的IP地址，Mask：是子网掩码。
 MTU：网络最大传输单元。Hwaddr：网卡的物理地址。
 down ：关闭指定的网络设备。
