@@ -1,0 +1,3 @@
+ipconfig只适用于windows，ifconfig适用于linux系统，都是用来查看网络接口的状态和ip地址的
+
+ip a可以把所有网卡的情况简单列出
