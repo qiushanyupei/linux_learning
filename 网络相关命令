@@ -1,3 +1,4 @@
 ipconfig只适用于windows，ifconfig适用于linux系统，都是用来查看网络接口的状态和ip地址的
 
 ip a可以把所有网卡的情况简单列出
+netstat显示系统进程连接网络的端口、协议等信息常见参数：-a：all；-p：program    显示每个连接进程ID；-n：numeric（以数字形式显示）
