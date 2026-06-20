@@ -1,0 +1,13 @@
+用来读取和解析电脑的 DMI (Desktop Management Interface) 或SMBIOS (System Management BIOS) 表信息
+-t 表示type ;第11中type是OEM 字符串，即厂商自定义字符串
+
+类型编号	关键词	        描述信息	                                  使用示例
+0	      bios	       BIOS 信息（版本、厂商、发布日期等）	         sudo dmidecode -t 0
+1	      system	     系统整体信息（制造商、产品名、序列号等）        sudo dmidecode -t system
+2	      baseboard	    主板信息	                                sudo dmidecode -t baseboard
+3	      chassis	     机箱/ chassis 信息                      	sudo dmidecode -t 3
+4	     processor	    CPU 详细信息（型号、频率、核心数等）    	sudo dmidecode -t processor
+7	      cache	        缓存信息	                               sudo dmidecode -t 7
+9	      slot	         系统插槽信息（PCI、PCI-E 等）	          sudo dmidecode -t slot
+16	   memory	         物理内存阵列信息（最大支持容量等）	        sudo dmidecode -t 16
+17	   memory	       具体内存设备信息（每个插槽的容量、类型、频率等）	sudo dmidecode -t 17
