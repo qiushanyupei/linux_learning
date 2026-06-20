@@ -4,3 +4,5 @@ mkfs命令（make file system）：将指定分区格式化为指定文件系统
 MBR主分区上限为4个，现代分区表常用GPT，主分区上限为128个，所有分区都是主分区
 ext4 是绝大多数 Linux 发行版默认的日志型文件系统；XFS较ext4更适合大型文件和大规模存储，常用于Linux发行版；NTFS是Windows 的主流文件系统，Linux支持解析
 inode用于描述文件/目录基本信息，superblock用于描述文件系统信息，包括存储空间、inode总数、挂载时间等
+
+grub（全称 GRand Unified Bootloader）是绝大多数 Linux 系统中默认使用的启动引导程序
