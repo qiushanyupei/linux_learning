@@ -1,0 +1,2 @@
+ -n, --numeric            don't resolve names
+不会将ip解析成域名或其他
