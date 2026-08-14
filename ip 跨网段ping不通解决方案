@@ -1,0 +1,4 @@
+看网关情况，路由是网关的硬件设备，通过route -n相关命令查看是否有错误路由，有的话就删掉
+sudo ip route del 192.18.27.1/32 dev eth2
+ip route del [目标网段] [dev 出接口]
+然后再用mgmt命令重新配ip似乎就能好
