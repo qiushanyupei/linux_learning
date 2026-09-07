@@ -9,3 +9,12 @@ Kernighan — Brian Kernighan
 'NR==line{print $2}'中NR是awk内部变量，满足条件就print $2，即输出第二个变量
 函数最终标准输出（print/echo 的内容）才可以被 $(...)捕获
 awk一般最后会跟输入文件，不用引号包裹，除非文件路径存储在变量中
+
+awk '/^$/ {print NR}' file.txt
+1. `/^$/`
+awk 的**正则匹配模式**
+
+- `^`：行开头
+- `$`：行结尾
+- `^$`：整行**没有任何字符，空行**
+`NR`：Number of Record，**当前行号**
