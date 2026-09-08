@@ -1,3 +1,25 @@
 `a`all users显示**所有用户**的进程，不只当前用户；只包含终端进程`
 u`user‑oriented / user format**以用户友好格式输出**，展示用户名、CPU、内存占用等详细列
 `x`without controlling terminal显示**没有控制终端**的进程（后台守护进程 daemon，比如 systemd 等，没有 tty）
+ps aux中的统计字段
+## VSZ
+- **全称：Virtual Set Size**，虚拟集大小
+- 单位：**KB**
+- 含义：进程**全部虚拟内存大小**
+## RSS
+- **全称：Resident Set Size**，驻留集大小
+- 单位：**KB**
+- 含义：进程当前**真正驻留在物理内存 (RAM) 中的内存大小**。
+STAT含义：
+字符	含义	说明
+R	Running / Runnable	正在 CPU 运行，或者就绪等待调度
+S	Interruptible Sleep	可中断睡眠，等待事件（等待 IO、等待 sleep、等待 socket），可以被信号唤醒
+D	Uninterruptible Sleep	不可中断睡眠，大多在等待磁盘 IO；不能被信号杀死，kill 无效
+Z	Zombie	僵尸进程；子进程已退出，父进程还没回收它的退出状态
+T	Stopped	被信号暂停（Ctrl+Z 或者调试暂停）
+符号	含义
+s	session leader，会话首进程（shell 就是 s）
++	位于前台进程组，终端前台程序
+l	多线程进程（有线程）
+<	高优先级进程
+N	低优先级进程
