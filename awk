@@ -25,3 +25,5 @@ awk 的**正则匹配模式**
 NF：**Number of Fields**当前行的字段/单词总数
 awk 'NF' file.txt
 awk内置print是自带换行符
+END是特殊动作，代表读取完所有行后再执行后续动作
+直接用的变量默认值为0
