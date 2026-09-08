@@ -22,5 +22,5 @@ awk 的**正则匹配模式**
 - `$`：行结尾
 - `^$`：整行**没有任何字符，空行**
 `NR`：Number of Record，**当前行号**
-NF：**Number of Fields**当前行的列数
+NF：**Number of Fields**当前行的字段/单词总数
 awk 'NF' file.txt
