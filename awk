@@ -24,3 +24,4 @@ awk 的**正则匹配模式**
 `NR`：Number of Record，**当前行号**
 NF：**Number of Fields**当前行的字段/单词总数
 awk 'NF' file.txt
+awk内置print是自带换行符
