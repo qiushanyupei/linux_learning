@@ -1,0 +1,3 @@
+tr [OPTION]... SET1 [SET2]
+-s  replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character（即把set1中出现过的字符压缩至一个）
+tr的默认功能是把set1中的字符统一替换成set2
