@@ -1,0 +1,1 @@
+-s setup进入配置菜单->Serial port setup->Serial Device更改进入串口的字符设备文件（是内核导出的设备节点，相当于访问硬件的通道）
