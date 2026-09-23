@@ -1,2 +1,2 @@
--v表示去除（invert-match）
+-v表示去除（invert-match）会输出未匹配的行
 -q表示quiet（即不输出查询结果）
