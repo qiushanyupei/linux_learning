@@ -1,3 +1,4 @@
 -v表示去除（invert-match）会输出未匹配的行
--q表示quiet（即不输出查询结果）
+-q表示quiet（即不输出查询结果，只有退出码，- 找到匹配内容：**退出码 0（成功）**- 没找到匹配：**退出码 非 0（一般是 1）**）
+只能在if语句内或其他方式内判断（对于if语句，退出码为0则为True）
 -E, --extended-regexp     PATTERNS are extended regular expressions(拓展正则表达式，如|表示或)
