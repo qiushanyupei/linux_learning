@@ -1,2 +1,3 @@
+ip -br a
 -br brief
-a表示all
+a是address的简写
