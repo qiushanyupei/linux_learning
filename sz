@@ -1,0 +1,11 @@
+sz -be esfc/local.config
+**sz**
+- 全称：**Send ZMODEM**
+- 作用：使用 ZMODEM(一种串口上使用的传输协议)（也可 Y/XMODEM）发送文件；配套 `rz` = Receive ZMODEM（上传）。
+1. **-b，长选项 --binary**
+   - 全称：**binary**
+   - 作用：二进制传输，不对文件做换行 / 文本转码；传配置、bin、固件一定要加 `-b`，避免字节被修改、校验异常。
+2. **-e，长选项 --escape**
+   - 全称：**escape**
+   - 作用：转义（escape）控制字符（XON/XOFF、DLE 等），防止流控字符打断传输；在有软流控的串口链路里很常用。
+## 整条命令语义：以二进制模式、转义控制字符，通过 ZMODEM 发送 `esfc/local.config` 到终端侧（PC 上的终端软件如 Xshell、SecureCRT、WindTerm 接收）。
